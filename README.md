@@ -4,12 +4,12 @@
 ### Packages
 
 - python == 3.6.12
-- numpy == 1.16.2
 - pytorch == 1.6.0
-- scipy == 1.5.2
-- tqdm == 4.54.0
-- logzero == 1.6.2
 - scikit-learn == 0.23.2
+- tqdm == 4.56.0
+- logzero == 1.6.3
+- numpy == 1.19.2
+- scipy == 1.5.2
 - pyxclib (available in https://github.com/kunaldahiya/pyxclib)
 
 ### Hardware requirements
