@@ -1,7 +1,7 @@
 # RDE
-#### Requirements
+### Requirements
 
-##### Packages
+#### Packages
 
 - python == 3.6.12
 - numpy == 1.16.2
@@ -16,7 +16,7 @@
 
 4 GPUs with 32G GPU RAM
 
-#### Data Preparation
+### Data Preparation
 
 Please put data in the same location as below
 
@@ -45,7 +45,7 @@ data
 
 
 
-#### Train and Test
+### Train and Test
 
 Train and test as follows:
 
