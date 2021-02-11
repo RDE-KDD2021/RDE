@@ -49,7 +49,7 @@ def get_configs(dataset, baseline):
         }
         model = {
             'num_experts' : 3,
-            'hidden_size' : (1024,),
+            'hidden_size' : (4096,),
             'input_mode'  : 'feature',
             'output_mode' : 'residual',
             'use_norm'    : True,

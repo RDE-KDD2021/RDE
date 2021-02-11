@@ -119,7 +119,7 @@ class Model:
                                 % (epoch_idx, batch_idx * train_loader.batch_size, avr_clf_loss, avr_div_loss, p5, n5, psp5, color, psn5))
                     avr_clf_loss, avr_div_loss = 0, 0
                     
-                    if self.test_step and color == '36' and epoch_idx > 0:
+                    if self.test_step and color == '36':
                         self.test(self.test_loader, inv_w, mlb, model_dir, feature_size, label_size, **kwargs)
                 
     def forward(self, feature, score):
@@ -187,8 +187,7 @@ class Model:
     
     def test(self, test_loader, inv_w, mlb, model_dir, feature_size, label_size, top=5, **kwargs):
         self.load_model(model_dir)
-        #test_preds = self.predict(tqdm(test_loader, desc='Testing', leave=False), feature_size, label_size, top)
-        test_preds = self.predict(test_loader, feature_size, label_size, top)
+        test_preds = self.predict(tqdm(test_loader, desc='Testing', leave=False), feature_size, label_size, top)
         test_labels = test_loader.dataset.labels
         
         p, n, psp, psn = [], [], [], []
