@@ -69,6 +69,21 @@ sh baseline/run_fastxml.sh amazon670k
 sh baseline/run_pfastrexml.sh amazon670k
 ```
 
+Test baseline results as follows:
+```bash
+python main.py -d eurlex -b parabel --test-baseline
+python main.py -d eurlex -b fastxml --test-baseline
+python main.py -d eurlex -b pfastrexml --test-baseline
+
+python main.py -d wiki10 -b parabel --test-baseline
+python main.py -d wiki10 -b fastxml --test-baseline
+python main.py -d wiki10 -b pfastrexml --test-baseline
+
+python main.py -d amazon670k -b parabel --test-baseline
+python main.py -d amazon670k -b fastxml --test-baseline
+python main.py -d amazon670k -b pfastrexml --test-baseline
+```
+
 Train and test as follows:
 
 ```bash
@@ -82,7 +97,7 @@ python main.py -d wiki10 -b parabel --train --test-step
 python main.py -d wiki10 -b fastxml --train --test-step
 python main.py -d wiki10 -b pfastrexml --train --test-step
 
-python main.py -d amazon670k -b parabel --train --test-step
-python main.py -d amazon670k -b fastxml --train --test-step
-python main.py -d amazon670k -b pfastrexml --train --test-step
+python main.py -d amazon670k -b parabel --train --test
+python main.py -d amazon670k -b fastxml --train --test
+python main.py -d amazon670k -b pfastrexml --train --test
 ```
