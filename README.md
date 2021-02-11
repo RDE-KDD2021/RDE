@@ -73,6 +73,7 @@ Train and test as follows:
 
 ```bash
 export CUDA_VISIBLE_DEVICES=0,1,2,3
+
 python main.py -d eurlex -b parabel --train --test-step
 python main.py -d eurlex -b fastxml --train --test-step
 python main.py -d eurlex -b pfastrexml --train --test-step
