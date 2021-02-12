@@ -18,8 +18,7 @@
 
 ## Data Preparation
 
-Bag-of-words (BoW) data can be downloaded from http://manikvarma.org/downloads/XC/XMLRepository.html
-Please put data in the same location as below:
+Bag-of-words (BoW) data can be downloaded from http://manikvarma.org/downloads/XC/XMLRepository.html. Please put data in the same location as below:
 
 ```
 data
