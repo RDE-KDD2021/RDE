@@ -215,5 +215,5 @@ class Model:
     def load_model(self, model_dir):
         if model_dir != None:
             for i in range(self.num_experts):
-                self.experts[i].load_state_dict(torch.load(os.path.join(model_dir, f'{2}.pth')))
+                self.experts[i].load_state_dict(torch.load(os.path.join(model_dir, f'{i}.pth')))
     
